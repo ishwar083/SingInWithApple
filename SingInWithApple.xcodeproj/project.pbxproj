@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E51CE7B239FC55C00CFC89F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51CE7A239FC55C00CFC89F /* LoginVC.swift */; };
+		5E51CE7D239FCD5600CFC89F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51CE7C239FCD5600CFC89F /* HomeVC.swift */; };
+		5E51CE7F239FD5AB00CFC89F /* ExtensionUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51CE7E239FD5AB00CFC89F /* ExtensionUserDefaults.swift */; };
+		5E94182C23C0975F00C6DD11 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E94182B23C0975F00C6DD11 /* appstore.png */; };
 		5EF9E62B238F9E8B0018A6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9E62A238F9E8B0018A6C8 /* AppDelegate.swift */; };
 		5EF9E62D238F9E8B0018A6C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9E62C238F9E8B0018A6C8 /* SceneDelegate.swift */; };
-		5EF9E62F238F9E8B0018A6C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9E62E238F9E8B0018A6C8 /* ViewController.swift */; };
 		5EF9E632238F9E8B0018A6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF9E630238F9E8B0018A6C8 /* Main.storyboard */; };
 		5EF9E635238F9E8B0018A6C8 /* SingInWithApple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9E633238F9E8B0018A6C8 /* SingInWithApple.xcdatamodeld */; };
 		5EF9E637238F9E900018A6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF9E636238F9E900018A6C8 /* Assets.xcassets */; };
@@ -36,10 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E51CE7A239FC55C00CFC89F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5E51CE7C239FCD5600CFC89F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5E51CE7E239FD5AB00CFC89F /* ExtensionUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUserDefaults.swift; sourceTree = "<group>"; };
+		5E94182B23C0975F00C6DD11 /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
 		5EF9E627238F9E8B0018A6C8 /* SingInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingInWithApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF9E62A238F9E8B0018A6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF9E62C238F9E8B0018A6C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EF9E62E238F9E8B0018A6C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EF9E631238F9E8B0018A6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EF9E634238F9E8B0018A6C8 /* SingInWithApple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SingInWithApple.xcdatamodel; sourceTree = "<group>"; };
 		5EF9E636238F9E900018A6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 		5EF9E64B238F9E900018A6C8 /* SingInWithAppleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingInWithAppleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF9E64F238F9E900018A6C8 /* SingInWithAppleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInWithAppleUITests.swift; sourceTree = "<group>"; };
 		5EF9E651238F9E900018A6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF9E65D238F9EAD0018A6C8 /* SingInWithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SingInWithApple.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +108,18 @@
 		5EF9E629238F9E8B0018A6C8 /* SingInWithApple */ = {
 			isa = PBXGroup;
 			children = (
+				5EF9E65D238F9EAD0018A6C8 /* SingInWithApple.entitlements */,
 				5EF9E62A238F9E8B0018A6C8 /* AppDelegate.swift */,
 				5EF9E62C238F9E8B0018A6C8 /* SceneDelegate.swift */,
-				5EF9E62E238F9E8B0018A6C8 /* ViewController.swift */,
+				5E51CE7A239FC55C00CFC89F /* LoginVC.swift */,
+				5E51CE7C239FCD5600CFC89F /* HomeVC.swift */,
+				5E51CE7E239FD5AB00CFC89F /* ExtensionUserDefaults.swift */,
 				5EF9E630238F9E8B0018A6C8 /* Main.storyboard */,
 				5EF9E636238F9E900018A6C8 /* Assets.xcassets */,
 				5EF9E638238F9E900018A6C8 /* LaunchScreen.storyboard */,
 				5EF9E63B238F9E900018A6C8 /* Info.plist */,
 				5EF9E633238F9E8B0018A6C8 /* SingInWithApple.xcdatamodeld */,
+				5E94182B23C0975F00C6DD11 /* appstore.png */,
 			);
 			path = SingInWithApple;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EF9E63A238F9E900018A6C8 /* LaunchScreen.storyboard in Resources */,
+				5E94182C23C0975F00C6DD11 /* appstore.png in Resources */,
 				5EF9E637238F9E900018A6C8 /* Assets.xcassets in Resources */,
 				5EF9E632238F9E8B0018A6C8 /* Main.storyboard in Resources */,
 			);
@@ -262,10 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EF9E62F238F9E8B0018A6C8 /* ViewController.swift in Sources */,
 				5EF9E62B238F9E8B0018A6C8 /* AppDelegate.swift in Sources */,
+				5E51CE7D239FCD5600CFC89F /* HomeVC.swift in Sources */,
+				5E51CE7F239FD5AB00CFC89F /* ExtensionUserDefaults.swift in Sources */,
 				5EF9E635238F9E8B0018A6C8 /* SingInWithApple.xcdatamodeld in Sources */,
 				5EF9E62D238F9E8B0018A6C8 /* SceneDelegate.swift in Sources */,
+				5E51CE7B239FC55C00CFC89F /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,16 +452,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SingInWithApple/SingInWithApple.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7224G6JACN;
 				INFOPLIST_FILE = SingInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mind.SingInWithApple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mi.all;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,16 +474,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SingInWithApple/SingInWithApple.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7224G6JACN;
 				INFOPLIST_FILE = SingInWithApple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mind.SingInWithApple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mi.all;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

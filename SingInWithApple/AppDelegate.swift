@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AuthenticationServices
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        appleIDProvider.getCredentialState(forUserID: UserDefaults.standard.currentUserIdentifier() ?? "") { (credentialState, error) in
+            switch credentialState {
+            case .authorized:
+                // The Apple ID credential is valid. Show Home UI Here
+                DispatchQueue.main.async {
+                    HomeVC.Push()
+                }
+                break
+            case .revoked:
+                // The Apple ID credential is revoked. Show SignIn UI Here.
+                break
+            case .notFound:
+                // No credential was found. Show SignIn UI Here.
+                break
+            default:
+                break
+            }
+        }
         return true
     }
 
